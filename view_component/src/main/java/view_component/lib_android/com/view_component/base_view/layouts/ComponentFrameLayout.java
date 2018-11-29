@@ -41,4 +41,5 @@ public abstract class ComponentFrameLayout<VC extends ViewComponent, CC extends 
     public CC getControllerComponent() {
         return componentDelegate.getControllerComponent();
     }
+
 }
