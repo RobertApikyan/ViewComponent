@@ -42,9 +42,4 @@ public abstract class ComponentFrameLayout<VC extends ViewComponent, CC extends 
         return componentDelegate.getControllerComponent();
     }
 
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        componentDelegate.onDestroy();
-    }
 }

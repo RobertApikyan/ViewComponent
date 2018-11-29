@@ -26,14 +26,6 @@ public abstract class ControllerComponent<VC extends ViewComponent> implements C
     }
 
     /**
-     * We call this inside {@link View#onDetachedFromWindow()} method
-     */
-    @Override
-    public void onDestroy() {
-        this.viewComponent = null;
-    }
-
-    /**
      * Use this method in order to get non null ViewComponent
      *
      * @param request {@link Request} simple interface, where method argument is non null {@link ViewComponent} instance

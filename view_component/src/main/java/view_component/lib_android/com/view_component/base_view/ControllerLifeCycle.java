@@ -15,9 +15,4 @@ interface ControllerLifeCycle<VC extends ViewComponent> {
      * @param viewComponent non null viewComponent
      */
     void onCreate(@NonNull VC viewComponent);
-
-    /**
-     * We call this inside {@link View#onDetachedFromWindow()} method
-     */
-    void onDestroy();
 }

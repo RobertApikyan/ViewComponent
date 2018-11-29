@@ -43,9 +43,4 @@ public abstract class ComponentRelativeLayout<VC extends ViewComponent, CC exten
         return componentDelegate.getControllerComponent();
     }
 
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        componentDelegate.onDestroy();
-    }
 }
