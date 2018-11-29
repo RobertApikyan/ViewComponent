@@ -80,13 +80,6 @@ public class ComponentDelegateImpl<VC extends ViewComponent, CC extends Controll
         controllerComponent.onCreate(viewComponent);
     }
 
-    @Override
-    public void onDestroy() {
-        controllerComponent.onDestroy();
-        controllerComponent = null;
-        viewComponent = null;
-    }
-
     /**
      * throws an {@link NullPointerException} if {@link #createViewComponent(LayoutInflater)} or {@link #createControllerComponent()} where return null
      */

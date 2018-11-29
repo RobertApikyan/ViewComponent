@@ -1,1 +1,1 @@
-include ':app', ':view_component'
+include ':view_component'
